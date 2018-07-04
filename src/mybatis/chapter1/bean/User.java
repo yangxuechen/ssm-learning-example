@@ -1,8 +1,8 @@
 package mybatis.chapter1.bean;
 
 public class User {
-	private String userName;  //ÓÃ»§ĞÕÃû
-	private String password;  //ÓÃ»§ÃÜÂë
+	private String userName;  //ç”¨æˆ·å
+	private String password;  //ç”¨æˆ·å¯†ç 
 	public String getUserName() {
 		return userName;
 	}
