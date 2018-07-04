@@ -1,8 +1,15 @@
 package mybatis.chapter1.bean;
 
 public class User {
-	private String userName;  //用户名
-	private String password;  //用户密码
+	private int id;          //用户id
+	private String userName; //用户名
+	private String password; //用户密码
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
 	public String getUserName() {
 		return userName;
 	}
@@ -15,5 +22,5 @@ public class User {
 	public void setPassword(String password) {
 		this.password = password;
 	}
-	
+    
 }
