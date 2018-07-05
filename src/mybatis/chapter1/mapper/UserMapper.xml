@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="mybatis.chapter1.mapper.UserMapper">
+	
+  <select id="getUser" resultType="mybatis.chapter1.bean.User" parameterType="int" >
+    select userID,userName,password from user where userID = #{id}
+  </select>
+  <insert id="insertUser" parameterType="mybatis.chapter1.bean.User">
+    insert into user(userName,password) values(#{userName},#{password})
+  </insert>
+  <update id="updateUser" parameterType="mybatis.chapter1.bean.User">
+    update user set userName=#{userName} ,password=#{password}
+    where userID=#{id}
+  </update>
+  <delete id="deleteUser" parameterType="int">
+    delete from user where userID=#{id}
+  </delete>
+</mapper>
