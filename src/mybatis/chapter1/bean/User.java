@@ -1,7 +1,7 @@
 package mybatis.chapter1.bean;
 
 public class User {
-	private int id;          //用户id
+	private int id;          
 	private String userName; //用户名
 	private String password; //用户密码
 	public int getId() {
